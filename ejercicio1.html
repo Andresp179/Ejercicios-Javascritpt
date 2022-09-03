@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicio 1</title>
+
+</head>
+
+<body>
+
+    <script>
+        const arregloDefinido = (cantidad = undefined, arr = []) => {
+
+            if (typeof cantidad !== "number") return console.error(`El valor"${cantidad}"ingresado, NO es un numero`);
+
+            if (Math.sign(cantidad) === -1) return console.error("El numero no puede ser negativo");
+
+            if (arr.length === 0) return console.error("El arreglo esta vacío");
+
+
+
+            for (i = 0; i < cantidad; i++) {
+
+                arr.push(parseInt(Math.random() * 100) + 2);
+
+            }
+
+            console.log(arr);
+
+
+
+        }
+
+        arregloDefinido(50, [2]);
+    </script>
+
+</body>
+
+</html>

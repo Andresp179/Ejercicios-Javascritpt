@@ -1,0 +1,6 @@
+
+let a=2;
+
+let b = new Number(2);
+
+console.log(a+b);
